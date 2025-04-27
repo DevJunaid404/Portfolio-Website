@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junaid Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="home">
+            <div class="nav-left">Junaid Portfolio</div>
+            <div class="nav-right" id="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <div class="left-section">
+            <h2>Hi, my name is <span>Junaid</span></h2>
+            <p>and I am a passionate Web Developer</p>
+        </div>
+        <div class="right-section">
+            <img src="/img/main-img.jpg" alt="Main Image">
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-me">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-left-section">
+            <img src="/img/about-img.jpg" alt="About Image">
+        </div>
+        <div class="about-right-section">
+            <h2>Let’s introduce<br>about myself</h2>
+            <p>Hi, I'm Junaid, a Bachelor of Computer Science graduate with a passion for technology, creativity, and building digital experiences.
+            I enjoy turning ideas into real-world solutions through web development, software design, and problem-solving. With a strong foundation in programming and a drive for continuous learning, I’m always exploring new tools and techniques to improve my skills.
+            I believe in creating clean, user-focused designs and writing efficient, maintainable code. My goal is to not just develop projects, but to bring value, innovation, and a sense of purpose to every line I write.
+            Thanks for taking the time to learn about me — I’m excited for the opportunities that lie ahead!</p>
+            <button class="btn">Download CV</button>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="services">
+            <h2>Services</h2>
+        </div>
+        <div class="service-cards">
+            <div class="card-one">
+                <img src="/img/services-one.png" alt="Web Development">
+                <h2>Web Development</h2>
+                <p>Building modern, responsive, and user-friendly websites tailored to your needs.</p>
+            </div>
+            <div class="card-one">
+                <img src="/img/services-two.png" alt="UI/UX Design">
+                <h2>UI/UX Design</h2>
+                <p>Designing clean, engaging, and intuitive user interfaces and experiences.</p>
+            </div>
+            <div class="card-one">
+                <img src="/img/services-three.png" alt="Web Design">
+                <h2>Web Design</h2>
+                <p>Creating beautiful, custom layouts that make your brand stand out online.</p>
+            </div>
+            <div class="card-one">
+                <img src="/img/services-four.png" alt="SEO Optimize">
+                <h2>SEO Optimization</h2>
+                <p>Improving website visibility and driving traffic through smart SEO strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-text">
+            <h2>Contact Me</h2>
+        </div>
+        
+        <form class="contact-form">
+            <input class="name" type="text" name="name" id="name" placeholder="Your Name" required>
+    
+            <input class="email" type="email" name="email" id="email" placeholder="Your Email" required>
+    
+            <textarea class="textarea" name="message" id="message" placeholder="Your Message" required></textarea>
+    
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>©2025 Junaid Shah. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

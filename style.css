@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    height: 7.6rem;
+}
+
+.nav-left {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #E4CB86;
+    cursor: pointer;
+}
+
+.nav-right ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-right ul li a {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.nav-right ul li a:hover {
+    color: #E4CB86;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 2.5rem;
+    height: 2rem;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.hamburger span {
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: white;
+    border-radius: 0.1rem;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80vh;
+    padding: 5rem;
+}
+
+.left-section {
+    max-width: 50%;
+}
+
+.left-section h2 {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.left-section p {
+    font-size: 3rem;
+}
+
+span {
+    color: #E4CB86;
+}
+
+.right-section img {
+    width: 30rem;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10rem 5rem;
+    flex-wrap: wrap;
+}
+
+.about-me {
+    text-align: center;
+    top: 10rem;
+    width: 100%;
+}
+
+.about-me h2 {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    color: #E4CB86;
+}
+
+.about-left-section img {
+    width: 50rem;
+    border-radius: 10px;
+}
+
+.about-right-section {
+    max-width: 45%;
+}
+
+.about-right-section h2 {
+    font-size: 3.5rem;
+    color: #E4CB86;
+    margin-bottom: 2rem;
+}
+
+.about-right-section p {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn {
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #E4CB86;
+    color: black;
+    font-weight: 700;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Services Section */
+.services-section {
+    padding: 10rem 5rem;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 3rem;
+    color: #E4CB86;
+    margin-bottom: 5rem;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.card-one {
+    background: #111;
+    padding: 3rem;
+    border-radius: 1rem;
+    width: 26rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-one:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #E4CB86;
+}
+
+.card-one img {
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+
+.card-one h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-one p {
+    font-size: 1.4rem;
+}
+
+/* input section */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 2rem;
+}
+
+.contact-text h2 {
+    font-size: 3rem;
+    color: #E4CB86;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    gap: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #ccc;
+}
+
+.contact-form .btn {
+    background-color: #E4CB86;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+    background-color: #121212;
+    color: #E4CB86;
+}
+
+.footer p{
+    font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .navbar {
+        padding: 2rem;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on smaller screens */
+    }
+
+    .nav-right {
+        position: absolute;
+        top: 7.6rem;
+        right: 0;
+        width: 100%;
+        background-color: #000;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+        display: none; /* Hidden by default */
+        z-index: 100;
+    }
+
+    .nav-right.show {
+        display: flex; /* Show when hamburger menu is clicked */
+    }
+
+    .nav-right ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .nav-right ul li a {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    .main-section {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .left-section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .left-section h2 {
+        font-size: 3.5rem;
+    }
+
+    .left-section p {
+        font-size: 2.5rem;
+    }
+
+    .right-section img {
+        width: 25rem;
+    }
+
+    .about-section {
+        padding: 5rem 2rem;
+        flex-direction: column;
+    }
+
+    .about-me h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-left-section img {
+        width: 100%;
+    }
+
+    .about-right-section {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .footer {
+        height: 8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 1.5rem;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on smaller screens */
+    }
+
+    .nav-right {
+        position: absolute;
+        top: 7.6rem;
+        right: 0;
+        width: 100%;
+        background-color: #000;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+        display: none; /* Hidden by default */
+        z-index: 100;
+    }
+
+    .nav-right.show {
+        display: flex; /* Show when hamburger menu is clicked */
+    }
+
+    .nav-right ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .nav-right ul li a {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    /* Main Section */
+    .main-section {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .left-section {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .left-section h2 {
+        font-size: 3rem;
+    }
+
+    .left-section p {
+        font-size: 2rem;
+    }
+
+    .right-section img {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 5rem 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-left-section img {
+        width: 100%;
+        max-width: 35rem;
+    }
+
+    .about-right-section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-right-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-right-section p {
+        font-size: 1.4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Service Cards */
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card-one {
+        width: 100%;
+        max-width: 30rem;
+        padding: 2rem;
+    }
+
+    .card-one img {
+        width: 6rem;
+    }
+
+    .card-one h2 {
+        font-size: 1.8rem;
+    }
+
+    .card-one p {
+        font-size: 1.2rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .contact-form .btn {
+        padding: 1rem 1.8rem;
+    }
+
+    /* Footer */
+    .footer {
+        height: 8rem;
+    }
+
+    .footer p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 479px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: flex; /* Ensure hamburger icon is visible */
+    }
+
+    .nav-right {
+        position: absolute;
+        top: 7.6rem;
+        right: 0;
+        width: 100%;
+        background-color: #000;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem 0;
+        display: none; /* Hidden by default */
+        z-index: 100;
+    }
+
+    .nav-right.show {
+        display: flex; /* Show when hamburger menu is clicked */
+    }
+
+    .nav-right ul {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .nav-right ul li a {
+        font-size: 1.4rem;
+        padding: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Main Section */
+    .main-section {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .left-section {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .left-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .left-section p {
+        font-size: 1.8rem;
+    }
+
+    .right-section img {
+        width: 100%;
+        max-width: 18rem;
+        margin: 0 auto;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 5rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-left-section img {
+        width: 100%;
+        max-width: 30rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-right-section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-right-section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-right-section p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Service Cards */
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .card-one {
+        width: 90%;
+        max-width: 28rem;
+        padding: 1.5rem;
+    }
+
+    .card-one img {
+        width: 6rem;
+    }
+
+    .card-one h2 {
+        font-size: 1.6rem;
+    }
+
+    .card-one p {
+        font-size: 1.1rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .contact-form .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+    .footer {
+        height: 7rem;
+    }
+
+    .footer p {
+        font-size: 1.2rem;
+    }
+}
